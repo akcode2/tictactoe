@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="interface">
+            <button class="btn" id="x-button">
+                <span id="X">X</span>
+                <span id="x-score">3</span>
+            </button>
+            <button class="btn" id="o-button">
+                <span id="O">O</span>
+                <span id="o-score">4</span>
+            </button>
+        </div>
+        <div class="game">
+            <svg width="270" height="270" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame 1" clip-path="url(#clip0_1_3)">
+                <g id="up">
+                <line id="v-top-right" x1="180" y1="180" x2="180" stroke="#85D2D0" stroke-width="10"/>
+                <line id="v-top-left" x1="90" y1="180" x2="90" stroke="#85D2D0" stroke-width="10"/>
+                </g>
+                <g id="down">
+                <line id="v-bottom-right" x1="180" y1="270" x2="180" y2="90" stroke="#85D2D0" stroke-width="10"/>
+                <line id="v-bottom-left" x1="90" y1="270" x2="90" y2="90" stroke="#85D2D0" stroke-width="10"/>
+                </g>
+                <g id="right">
+                <line id="h-bottom-right" x1="270" y1="180" x2="90" y2="180" stroke="#85D2D0" stroke-width="10"/>
+                <line id="h-top-right" x1="270" y1="90" x2="90" y2="90" stroke="#85D2D0" stroke-width="10"/>
+                </g>
+                <g id="left">
+                <line id="h-bottom-left" x1="180" y1="180" x2="-1.88786e-09" y2="180" stroke="#85D2D0" stroke-width="10"/>
+                <line id="h-top-left" x1="180" y1="90" x2="-1.88786e-09" y2="90" stroke="#85D2D0" stroke-width="10"/>
+                </g>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_3">
+                <rect width="270" height="270" fill="white"/>
+                </clipPath>
+                </defs>
+                <style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+            </svg>
+            <div id="top-left"></div>
+            <div id="top-middle"></div>
+            <div id="top-right"></div>
+            <div id="center-left"></div>
+            <div id="center"></div>
+            <div id="center-right"></div>
+            <div id="bottom-left"></div>
+            <div id="bottom-middle"></div>
+            <div id="bottom-right"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
